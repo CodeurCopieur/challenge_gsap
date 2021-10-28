@@ -19,7 +19,7 @@ gsap.to('.section__wrap-cd', {
 ScrollTrigger.create({
   trigger: '.s2',
     pin: true,
-    markers: true,
+    //markers: true,
     //    Trigger Scroller
     end: 'bottom-=120 50%'
 })
