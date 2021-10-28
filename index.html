@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge</title>
+</head>
+<style>
+  *,::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .section {
+    min-height: 110vh;
+    position: relative;
+  }
+
+  .s1, .s3 {
+    background: rgb(250, 199, 103);
+  }
+
+  .s2 {
+    background: lightskyblue;
+  }
+
+  .section__wrap-img{
+    position: absolute;
+    width: 25vw;
+    padding-bottom: 25.33vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    z-index: 1;
+  }
+  .section__wrap-img::before {
+    background-color: black;
+    position: absolute;
+    width: 25vw;
+    padding-bottom: 25.33vw;
+  }
+
+  .section__wrap-cd {
+    border-radius: 50%;
+    position: absolute;
+    width: 20vw;
+    padding-bottom: 20.33vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(231, 21, 21);
+    z-index: -1;
+  }
+</style>
+<body>
+
+  <section class="section s1"></section>
+  <section class="section s2">
+    <div class="container">
+      <div class="section__wrap-img">
+        <div class="section__wrap-cd"></div>
+      </div>
+      
+    </div>
+  </section>
+  <section class="section s3"></section>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
