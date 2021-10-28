@@ -8,7 +8,7 @@ gsap.to('.section__wrap-cd', {
     markers: true,
     scrub: 1,
     //    Trigger Scroller
-    start: "top+=100 50%",
+    start: "top+=120 50%",
     end: "top+=200 20%",
     toggleActions: "restart none none none",
   }
