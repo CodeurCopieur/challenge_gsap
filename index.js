@@ -5,12 +5,12 @@ gsap.to('.section__wrap-cd', {
   ease: 'Power4.out',
   scrollTrigger: {
     trigger: ".section__wrap-cd",
-    //markers: true,
-    scrub: 2,
+    markers: true,
+    scrub: 1,
     //    Trigger Scroller
-    start: "top-100 50%",
+    start: "top-90 50%",
     end: "top+=100 30%",
-    toggleActions: "restart complete none none",
+    toggleActions: "restart none none none",
   }
 })
 
@@ -19,7 +19,7 @@ gsap.to('.section__wrap-cd', {
 ScrollTrigger.create({
   trigger: '.s2',
     pin: true,
-    markers: true,
+    //markers: true,
     //    Trigger Scroller
     star: 'top 50',
     end: 'bottom+=100 50%'
