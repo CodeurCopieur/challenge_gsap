@@ -32,14 +32,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: black;
     z-index: 1;
-  }
-  .section__wrap-img::before {
-    background-color: black;
-    position: absolute;
-    width: 25vw;
-    padding-bottom: 25.33vw;
   }
 
   .section__wrap-cd {
@@ -53,6 +46,15 @@
     background-color: rgb(231, 21, 21);
     z-index: -1;
   }
+
+  .section__wrap-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: cadetblue;
+  }
 </style>
 <body>
 
@@ -61,6 +63,7 @@
     <div class="container">
       <div class="section__wrap-img">
         <div class="section__wrap-cd"></div>
+        <div class="section__wrap-cover"></div>
       </div>
       
     </div>
